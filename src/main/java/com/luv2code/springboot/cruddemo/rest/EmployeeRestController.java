@@ -2,6 +2,7 @@ package com.luv2code.springboot.cruddemo.rest;
 
 import com.luv2code.springboot.cruddemo.entity.Employee;
 import com.luv2code.springboot.cruddemo.service.EmployeeService;
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -59,6 +60,10 @@ public class EmployeeRestController {
         employeeService.deleteByID(employeeID);
         return "Deleted employee id - " + employeeID;
     }
+
+
+
+
 
 
 
